@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Workcation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main class="app">
+        <section class="app-sidebar">
+            <div>
+                <div class="sidebar-nav">
+                    <a class="sidebar-navfoot-link" href="#">
+                        <img src="/assets/images/logo.png" alt="logo">
+                        <span class="logo-color">Work</span><span>cation</span>
+                    </a>
+                </div>
+                <div class="app-sidebar-items">
+                    <form class="app-filter" action="#">
+                        <div class="filter-item filter-bedrooms">
+                            <label for="bedrooms">Bedrooms</label>
+                            <select name="bedrooms" id="bedrooms">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="filter-item filter-bathrooms">
+                            <label for="bathrooms">Bathrooms</label>
+                            <select name="bathrooms" id="bathrooms">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="filter-item filter-price">
+                            <label for="price-range">Price Range</label>
+                            <select name="price-range" id="price-range">
+                                <option value="1000">Up to $1,000 /wk</option>
+                                <option value="2000">Up to $2,000 /wk</option>
+                                <option value="3000">Up to $3,000 /wk</option>
+                                <option value="4000">Up to $4,000 /wk</option>
+                                <option value="5000">Up to $5,000 /wk</option>
+
+                            </select>
+                        </div>
+                    </form>
+                    <div class="app-property">
+                        <p>Property Type</p>
+                        <div class="app-property-items">
+                            <div class="type-item">
+                                <input type="radio" id="House" name="property-type" />
+                                <label for="House">House</label>
+                            </div>
+                            <div class="type-item">
+                                <input type="radio" id="Apartment" name="property-type" />
+                                <label for="Apartment">Apartment</label>
+                            </div>
+                            <div class="type-item">
+                                <input type="radio" id="Loft" name="property-type" />
+                                <label for="Loft">Loft</label>
+                            </div>
+                            <div class="type-item">
+                                <input type="radio" id="Townhouse" name="property-type" />
+                                <label for="Townhouse">Townhouse</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-amenities">
+                        <p>Amenities</p>
+                        <div class="amenities-items">
+                            <div class="amenities-item">
+                                <input type="checkbox" id="Balcony" />
+                                <label for="Balcony">Balcony</label>
+                            </div>
+                            <div class="amenities-item">
+                                <input type="checkbox" id="Air-conditioning" />
+                                <label for="Air-conditioning">Air conditioning</label>
+                            </div>
+                            <div class="amenities-item">
+                                <input type="checkbox" id="Pool" />
+                                <label for="Pool">Pool</label>
+                            </div>
+                            <div class="amenities-item">
+                                <input type="checkbox" id="Beach" />
+                                <label for="Beach">Beach</label>
+                            </div>
+                            <div class="amenities-item">
+                                <input type="checkbox" id="Pet-firendly" />
+                                <label for="Pet-firendly">Pet firendly</label>
+                            </div>
+                            <div class="amenities-item">
+                                <input type="checkbox" id="Kid-firendly" />
+                                <label for="Kid-firendly">Kid firendly</label>
+                            </div>
+                            <div class="amenities-item">
+                                <input type="checkbox" id="Parking" />
+                                <label for="Parking">Parking</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-foot">
+                <a href="#">
+                    <input id="update-results" type="button" name="submit" value="Update results">
+                </a>
+            </div>
+        </section>
+        <section class="app-header">
+            <div class="app-badge-filter"><i class="fa-solid fa-arrow-down-wide-short"></i>Filters</div>
+            <div class="app-search">
+                <input type="search" placeholder="Search by keywords">
+                <button class="search-button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <nav class="app-nav">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="#">List your property</a></li>
+                    <li class="nav-item"><a href="#">Trips</a></li>
+                    <li class="nav-item"><a href="#">Messages</a></li>
+                    <li class="nav-item"><a href="#">Support</a></li>
+                    <li class="nav-item profile">
+                        <a href="#">
+                            <img src="/assets/images/profile.png" alt="profile image">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section class="app-content">
+            <div class="app-content-title">
+                <h2 class="content-title-location">Los Angeles</h2>
+                <div class="content-title-desc">
+                    <p>Live like the stars in these luxurious Southern California estates.</p>
+                    <a class="viewall" href="#">View all</a>
+                </div>
+            </div>
+            <article class="app-content-location">
+                <div class="location-image"><img src="/assets/images/image.jpg" alt=""></div>
+                <div class="location-desc">
+                    <div class="desc-room-items">
+                        <span class="badge">PLUS</span>
+                        <span class="desc-room-item">
+                            <span>3 BEDS </span>
+                            <span>&#183;</span>
+                            <span>2 BATHS</span>
+                        </span>
+                    </div>
+                    <p class="desc-title">Modern home in city center </p>
+                    <div class="desc-price">
+                        <span>$1,400</span>
+                        <span>/wk</span>
+                    </div>
+                    <div class="desc-review">
+                        <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                        <span>34 Reviews</span>
+                    </div>
+                </div>
+            </article>
+            <article class="app-content-location">
+                <div class="location-image"><img src="/assets/images/image.jpg" alt=""></div>
+                <div class="location-desc">
+                    <div class="desc-room-items">
+                        <span class="badge">PLUS</span>
+                        <span class="desc-room-item">
+                            <span>3 BEDS </span>
+                            <span>&#183;</span>
+                            <span>2 BATHS</span>
+                        </span>
+                    </div>
+                    <p class="desc-title">Modern home in city center </p>
+                    <div class="desc-price">
+                        <span>$1,400</span>
+                        <span>/wk</span>
+                    </div>
+                    <div class="desc-review">
+                        <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                        <span>34 Reviews</span>
+                    </div>
+                </div>
+            </article>
+            <article class="app-content-location">
+                <div class="location-image"><img src="/assets/images/image.jpg" alt=""></div>
+                <div class="location-desc">
+                    <div class="desc-room-items">
+                        <span class="badge">PLUS</span>
+                        <span class="desc-room-item">
+                            <span>3 BEDS </span>
+                            <span>&#183;</span>
+                            <span>2 BATHS</span>
+                        </span>
+                    </div>
+                    <p class="desc-title">Modern home in city center </p>
+                    <div class="desc-price">
+                        <span>$1,400</span>
+                        <span>/wk</span>
+                    </div>
+                    <div class="desc-review">
+                        <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                        <span>34 Reviews</span>
+                    </div>
+                </div>
+            </article>
+            <article class="app-content-location">
+                <div class="location-image"><img src="/assets/images/image.jpg" alt=""></div>
+                <div class="location-desc">
+                    <div class="desc-room-items">
+                        <span class="badge">PLUS</span>
+                        <span class="desc-room-item">
+                            <span>3 BEDS </span>
+                            <span>&#183;</span>
+                            <span>2 BATHS</span>
+                        </span>
+                    </div>
+                    <p class="desc-title">Modern home in city center </p>
+                    <div class="desc-price">
+                        <span>$1,400</span>
+                        <span>/wk</span>
+                    </div>
+                    <div class="desc-review">
+                        <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                        <span>34 Reviews</span>
+                    </div>
+                </div>
+            </article>
+            <article class="app-content-location">
+                <div class="location-image"><img src="/assets/images/image.jpg" alt=""></div>
+                <div class="location-desc">
+                    <div class="desc-room-items">
+                        <span class="badge">PLUS</span>
+                        <span class="desc-room-item">
+                            <span>3 BEDS </span>
+                            <span>&#183;</span>
+                            <span>2 BATHS</span>
+                        </span>
+                    </div>
+                    <p class="desc-title">Modern home in city center </p>
+                    <div class="desc-price">
+                        <span>$1,400</span>
+                        <span>/wk</span>
+                    </div>
+                    <div class="desc-review">
+                        <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                        <span>34 Reviews</span>
+                    </div>
+                </div>
+            </article>
+            <article class="app-content-location">
+                <div class="location-image"><img src="/assets/images/image.jpg" alt=""></div>
+                <div class="location-desc">
+                    <div class="desc-room-items">
+                        <span class="badge">PLUS</span>
+                        <span class="desc-room-item">
+                            <span>3 BEDS </span>
+                            <span>&#183;</span>
+                            <span>2 BATHS</span>
+                        </span>
+                    </div>
+                    <p class="desc-title">Modern home in city center </p>
+                    <div class="desc-price">
+                        <span>$1,400</span>
+                        <span>/wk</span>
+                    </div>
+                    <div class="desc-review">
+                        <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                        <span>34 Reviews</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
