@@ -59,6 +59,7 @@ a {
 }
 .app-header {
   background-color: var(--color-secondary-500);
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -187,6 +188,7 @@ a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: default;
 }
 .desc-price :last-child {
   color: var(--color-secondary-300);
@@ -306,6 +308,9 @@ a {
     padding: 1.5rem 3rem;
     background-color: var(--color-secondary-0);
   }
+  .app-badge-filter {
+    display: none;
+  }
   .app-search {
     background-color: var(--color-primary-100);
   }
@@ -348,9 +353,7 @@ a {
     height: 32px;
     border-radius: 100%;
   }
-  .app-badge-filter {
-    display: none;
-  }
+
   /* filter */
   .app-filter {
     display: grid;
@@ -441,5 +444,14 @@ a {
   }
   .amenities-items [type="checkbox"]:checked {
     background-color: var(--color-primary-300);
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .app {
+    grid-template-columns: 350px 1fr;
+  }
+  .app-sidebar-items {
+    padding: 3rem;
   }
 }
